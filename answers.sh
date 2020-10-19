@@ -21,3 +21,11 @@ WHERE name= "Basma" '
 7- 'UPDATE students
 SET Points = 100
 WHERE name = "Alex"'
+
+8-'INSERT INTO graduates (id ,name , Age , Gender , Points)
+SELECT * FROM students
+WHERE name = "Layal"'
+
+'DELETE FROM students
+where name = "Layal"'
+
