@@ -27,8 +27,6 @@ WHERE name = "Alex"'
 SELECT * FROM students
 WHERE name = "Layal"'
 
-
-
 'DELETE FROM students
 where name = "Layal"'
 
@@ -38,3 +36,24 @@ SELECT employees.Name, Company,date
 FROM employees
 JOIN companies
 on employees.Company = companies.name'
+
+'SELECT name FROM myTable
+where Date < 2000;'
+
+'SELECT Company FROM employees
+WHERE Role like "Graphic Designer";'
+
+10- 'Count & Filter'
+'SELECT * FROM students
+WHERE Points = (SELECT max(Points) FROM students);'
+
+'SELECT avg(Points) FROM students;'
+
+'SELECT count(name) as
+Points FROM students WHERE Points = 500;'
+
+'SELECT * FROM students
+WHERE name like "%s%";'
+
+'SELECT * FROM students
+ORDER BY Points DESC;'
