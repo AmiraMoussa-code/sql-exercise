@@ -22,10 +22,19 @@ WHERE name= "Basma" '
 SET Points = 100
 WHERE name = "Alex"'
 
-8-'INSERT INTO graduates (id ,name , Age , Gender , Points)
+8'Creating Table'
+'INSERT INTO graduates (id ,name , Age , Gender , Points)
 SELECT * FROM students
 WHERE name = "Layal"'
+
+
 
 'DELETE FROM students
 where name = "Layal"'
 
+9-'Joins'
+'CREATE TABLE myTable AS
+SELECT employees.Name, Company,date
+FROM employees
+JOIN companies
+on employees.Company = companies.name'
